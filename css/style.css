@@ -1,0 +1,286 @@
+/* center the whole responsive site */
+
+.Absolute-Center.is-Responsive {
+  width: 50%; 
+  height: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
+}
+
+    
+
+
+
+
+body {
+	font-family: "Alegreya", sans-serif;
+	font-size: 200%;
+	position: relative;
+	
+}
+
+
+
+/* _________HEADER NAVIGATION____________  */
+
+header .navbar {
+	padding: 30px 0;
+}
+
+
+header .navbar-default {
+	background-color: transparent;
+	border: none;
+	margin-top: 0;
+	padding-top: 5px;
+}
+
+
+
+header .navbar-default .navbar-nav a {
+	color: rgb(249,249,249);
+	font-weight: 800;
+	
+}
+
+header.navbar-default .navbar-nav a:hover {
+	color: rgb(249,249,249);
+		
+}
+
+header .navbar-default .navbar-nav a:active {
+	color: rgb(249,249,249);
+	background: transparent;
+	border-bottom: 4px;
+	text-shadow: none;
+		
+}		
+	
+
+
+
+
+
+
+
+
+/* _________Navbar brand_______ */
+
+header .navbar-brand {
+	background-image: url('../img/lotus.svg');
+	max-width: 100%;
+	max-height: 100%;
+	background-repeat: no-repeat;
+	background-position: 20px 0;
+	background-size: 100% 100%;
+	height: auto;
+	font-size: 12px;
+		
+	
+}
+
+
+
+
+header .navbar-brand h1 {
+	color: white;
+	margin: 0px;
+	font-size: 2em;
+	font-weight: 400;
+	padding-left: 10px;
+}
+
+header .navbar-brand span.subhead {
+	font-family: Slabo, serif;
+	font-size: 1em;
+	font-weight: 100;	
+	
+}
+
+
+/* _________Navbar toggle______ */
+
+header .navbar-brand-toggle {
+	background-color: rgb(45,45,);
+	}
+
+header .navbar-default .navbar-toggle .icon bar {
+	background-color: transparent;
+}
+
+
+@media only screen and (max-width: 768px){ 
+	
+	header .navbar-collapse.in{
+	background-color: rgba(0,0,0, .5);	
+	color: fuchsia;
+	
+}	
+
+
+	 }
+
+/* CAROSUEL IMAGES  */
+
+
+
+
+
+
+
+/* _________MAIN P______________ */
+
+main p {
+	padding-top: 10px;
+}
+
+
+
+
+/*  _______H-TAGS____________  */
+
+h2, h3, h4 {
+	font-family: "Roboto and Slab sans-serif" ;
+	text-align: center;
+	margin: 0px;
+	padding: 20px 10px;
+}
+
+
+/* ______SERVICES_______________ */
+
+
+.main{
+	background-color: #F5E6C4;
+	background-image: -webkit-linear-gradient(top, #F5E6C4, #dbdbdb); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+	border-top: 20px solid rgba(145, 125, 85, .5);
+     
+}
+
+
+
+#page-two img.icon{
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	padding-top: 20px;
+}
+
+#page-one p {
+	padding-bottom: 10px;
+	margin:0px;
+}
+
+article p {
+	padding: 5px;
+
+}
+
+#page-three{
+	padding-bottom: 20px;
+}
+
+
+
+/* ____________FOOTER_______________ */
+
+/*
+
+sticky footer
+*/
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 0px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  background-color: transparent;
+  
+  
+  
+}
+
+
+
+
+
+
+footer {
+	margin-bottom: 0px;
+	padding-top: 80px;
+	font-size: .80em;
+	text-align: center;
+	padding-right: 50px;
+	background-color: black;
+	color: rgb(241,241,241);
+	
+	
+}
+
+
+
+footer p {
+	
+	margin-bottom: 0px;
+	padding-left: 50px;
+
+}
+
+#page-four p {
+	color: rgb(241,241,241);
+}
+
+
+ul.social i {
+	display: block;
+	list-style: none;
+	text-decoration: none;
+	font-size: 1.5em;
+	
+}
+
+
+
+.navbar ul li{
+	padding:0 5px;
+	text-decoration: none;
+	display: inline-block;
+	
+	
+}
+.navbar ul li a{
+	color: rgb(241,241,241);
+	text-decoration: none;
+	list-style: none;	
+}
+
+ul.social li.facebook a:hover{
+	color: rgb(59,89,152);
+	}
+ul.social li.twitter a:hover{
+	color: #0084B4;
+	}
+ul.social li.linkedin a:hover{
+	color: #1C87BD;
+	}
+ul.social li.instagram a:hover{
+	color: rgb(81,127,287);
+	}
+
+ul.social li.google a:hover{
+	color: rgb(234,68,54);
+	}
