@@ -1,5 +1,41 @@
 /* center the whole responsive site */
 
+*{
+	box-sizing: border-box;
+}
+
+
+
+/* WEB FONT */
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('../fonts/Roboto-Thin-webfont.eot');
+    src: url('../fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Thin-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* BODY STYLE */
+
+
+body {
+	font-family: 'robotothin', serif;
+	font-size: 200%;
+	position: relative;
+	background-color: #d7ebf3;
+	color: #454869;
+
+	
+}
+
+
+
+
+
 .Absolute-Center.is-Responsive {
   width: 50%; 
   height: 50%;
@@ -11,14 +47,6 @@
     
 
 
-
-
-body {
-	font-family: "Alegreya", sans-serif;
-	font-size: 200%;
-	position: relative;
-	
-}
 
 
 
@@ -41,6 +69,7 @@ header .navbar-default {
 header .navbar-default .navbar-nav a {
 	color: rgb(249,249,249);
 	font-weight: 800;
+	background-color: transparent;
 	
 }
 
@@ -57,10 +86,25 @@ header .navbar-default .navbar-nav a:active {
 		
 }		
 	
+/* this code adjust the height of the carousel */
 
+.carousel .item {
+  height: 300px;
+}
 
+/* CAROSUEL IMAGES  */
 
-
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+/* this code adjust the image in the carousel but you have to put the measument in the image for the correct adjustment */
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 
 
@@ -99,10 +143,11 @@ header .navbar-brand span.subhead {
 }
 
 
+
 /* _________Navbar toggle______ */
 
 header .navbar-brand-toggle {
-	background-color: rgb(45,45,);
+	background-color: rgb(45,45,45);
 	}
 
 header .navbar-default .navbar-toggle .icon bar {
@@ -110,30 +155,34 @@ header .navbar-default .navbar-toggle .icon bar {
 }
 
 
-@media only screen and (max-width: 768px){ 
-	
-	header .navbar-collapse.in{
-	background-color: rgba(0,0,0, .5);	
-	color: fuchsia;
-	
-}	
-
-
-	 }
-
-/* CAROSUEL IMAGES  */
-
-
-
-
-
 
 
 /* _________MAIN P______________ */
 
-main p {
+.main {	fff;
+	
+}
+
+.main p {
 	padding-top: 10px;
 }
+
+p {
+	padding-bottom: 5px;
+}
+
+
+.icon {
+	padding-bottom: 15px;k
+}
+
+.page-three {
+	background: linear-gradient(to bottom,  #fff, transparent 100%);
+	
+}
+
+
+
 
 
 
@@ -141,10 +190,11 @@ main p {
 /*  _______H-TAGS____________  */
 
 h2, h3, h4 {
-	font-family: "Roboto and Slab sans-serif" ;
+	font-family: 'robotothin', serif;
 	text-align: center;
 	margin: 0px;
 	padding: 20px 10px;
+	font-weight: bolder;
 }
 
 
@@ -152,9 +202,9 @@ h2, h3, h4 {
 
 
 .main{
-	background-color: #F5E6C4;
-	background-image: -webkit-linear-gradient(top, #F5E6C4, #dbdbdb); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-	border-top: 20px solid rgba(145, 125, 85, .5);
+	
+	background-image: -webkit-linear-gradient(top); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+	border-top: 20px solid rgba(154, 189, 241, .5);
      
 }
 
@@ -216,21 +266,16 @@ body {
 
 
 
-
-
-
 footer {
 	margin-bottom: 0px;
 	padding-top: 80px;
 	font-size: .80em;
 	text-align: center;
 	padding-right: 50px;
-	background-color: black;
-	color: rgb(241,241,241);
+	color: black;
 	
 	
 }
-
 
 
 footer p {
@@ -240,9 +285,6 @@ footer p {
 
 }
 
-#page-four p {
-	color: rgb(241,241,241);
-}
 
 
 ul.social i {
@@ -263,7 +305,7 @@ ul.social i {
 	
 }
 .navbar ul li a{
-	color: rgb(241,241,241);
+	
 	text-decoration: none;
 	list-style: none;	
 }
@@ -284,3 +326,17 @@ ul.social li.instagram a:hover{
 ul.social li.google a:hover{
 	color: rgb(234,68,54);
 	}
+	
+/* 	MEDIA QUERY STYLE */
+	
+	
+	@media only screen and (max-width: 768px){ 
+	
+	header .navbar-collapse.in{
+	background-image: -webkit-linear-gradient(top, 219,130,0,);
+	color: fuchsia;
+	
+}	
+
+
+	 }
